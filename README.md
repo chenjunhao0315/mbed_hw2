@@ -17,4 +17,4 @@
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午3.26.17.png)
     This is the origin signal captured by picoscope with passing low-pass filter
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午3.24.51.png)
-    Python analysis is almost identical to picoscope analysis, but the sample rate of picoscope is more high than STM
+    Python analysis is almost identical to picoscope analysis, but the sample rate of picoscope is higher than STM.
