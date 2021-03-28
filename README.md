@@ -11,7 +11,7 @@
 
 2. Result
 
-    The program run at 5Hz, below is python analysis
+    The program run at 5Hz, below is the python analysis
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午2.16.36.png)
     This is the origin signal captured by picoscope without passing low-pass filter
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午3.26.17.png)
