@@ -12,3 +12,4 @@
 2. Result
 
     This is the result after python analysis
+    ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午2.16.36.png)
