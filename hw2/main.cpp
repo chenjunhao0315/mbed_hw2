@@ -107,7 +107,11 @@ void analogout() {
 
 void freq_down() {
     if (duration_cast<milliseconds>(debounce_button.elapsed_time()).count() > DEBOUNCE_TIME) {
-        freq -= 5;
+        if (freq <= 5 && freq > 1) {
+            freq -= 1;
+        } else if (freq > 5){
+            freq -= 5;
+        }
         debounce_button.reset();
         state = INPUT;
     }
@@ -115,7 +119,11 @@ void freq_down() {
 
 void freq_up() {
     if (duration_cast<milliseconds>(debounce_button.elapsed_time()).count() > DEBOUNCE_TIME) {
-        freq += 5;
+        if (freq < 5) {
+            freq += 1;
+        } else {
+            freq += 5;
+        }
         debounce_button.reset();
         state = INPUT;
     }
@@ -129,18 +137,26 @@ void freq_select() {
 }
 
 void uLCD_display() {
-    uLCD.locate(1, 1);
-    uLCD.printf("Freq Selector");
+    uLCD.locate(7, 0);
+    uLCD.color(WHITE);
+    uLCD.printf("Menu");
+    uLCD.locate(0, 1);
+    uLCD.color(GREEN);
+    uLCD.printf("Frequency selector");
+    uLCD.locate(1, 2);
+    uLCD.printf("Freq :");
     uLCD.locate(1, 3);
     uLCD.printf("State: ");
     while(true) {
         if (state == INPUT) {
-            uLCD.locate(1, 2);
-            uLCD.printf("%4dHz", freq);
-            uLCD.locate(8, 3);
-            uLCD.printf("INPUT");
+            uLCD.locate(7, 2);
+            uLCD.color(RED);
+            uLCD.printf("%3dHz", freq);
+            uLCD.locate(7, 3);
+            uLCD.printf("INPUT ");
         } else if (state == START) {
             uLCD.locate(7, 3);
+            uLCD.color(RED);
             uLCD.printf("START");
         }
     }
