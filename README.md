@@ -11,6 +11,8 @@
 
 2. Result
 
+    The menu of frequency selector with frequency select and state display.
+    ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午4.19.16.png)
     The program run at 5Hz, below is the python analysis
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午2.16.36.png)
     This is the origin signal captured by picoscope without passing low-pass filter
@@ -18,4 +20,4 @@
     This is the origin signal captured by picoscope with passing low-pass filter
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午3.24.51.png)
     Python analysis is almost identical to picoscope analysis, but the sample rate of picoscope is higher than STM.
-    The peak of the wave has a little shift after RC los-pass filter. Maybe change the parameter of RC low-pass filter can has better result. But I have no more material in hand, I have tried my best QQ.
+    The peak of the wave has a little shift after RC los-pass filter. Maybe change the parameter of RC low-pass filter can get better result, but I have no more material in hand. I have tried my best QQ.
