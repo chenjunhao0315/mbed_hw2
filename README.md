@@ -18,6 +18,6 @@
     This is the origin signal captured by picoscope without passing low-pass filter
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-31%20上午12.21.09.png)
     This is the origin signal captured by picoscope with passing low-pass filter
-    ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午3.24.51.png)
+    ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-31%20上午12.40.35.png)
     Python analysis is almost identical to picoscope analysis, but the sample rate of picoscope is higher than STM.
     The peak of the wave has a little shift after RC los-pass filter. Maybe change the parameter of RC low-pass filter can get better result, but I have no more material in hand. I have tried my best QQ.
