@@ -14,7 +14,7 @@
     The menu of frequency selector with frequency select and state display.
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午4.19.16.png)
     The program run at 5Hz, below is the python analysis
-    ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-28%20下午2.16.36.png)
+    ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-31%20上午12.39.32.png)
     This is the origin signal captured by picoscope without passing low-pass filter
     ![image](https://github.com/chenjunhao0315/mbed_hw2/blob/master/截圖%202021-03-31%20上午12.21.09.png)
     This is the origin signal captured by picoscope with passing low-pass filter
