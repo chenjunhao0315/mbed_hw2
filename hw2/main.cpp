@@ -85,23 +85,21 @@ void fft_data() {
 
 void analogout() {
     while(true) {
-        int t = 1000000 / freq;
-        int dt = round(float(t) / RESOLUTION);
-
-        float v = 0.91;
-        float dv = 0.91 / RESOLUTION;
-
+        int t = 860000 / freq;
         while(state == START) {
-            v -= dv;
-            if (v < 0) {
-                v = 0.91;
+            for (float v = 0; v <= 3.3 / 3.3; v += (3.3 / 3.3) / RESOLUTION) {
+                Wave = v;
+                while(wave_generate.elapsed_time().count() <= t * 3 / 10 / RESOLUTION);
+                wave_generate.reset();
+                //wait_us(t * 3 / 10 / RESOLUTION);
             }
-            Wave = v;
-            //while(duration_cast<milliseconds>(wave_generate.elapsed_time()).count() < dt);
-            while(wave_generate.elapsed_time().count() < dt);
-            wave_generate.reset();
+            for (float v = 3.3 / 3.3; v >= 0; v -= (3.3 / 3.3) / RESOLUTION) {
+                Wave = v;
+                while(wave_generate.elapsed_time().count() <= t * 7 / 10 / RESOLUTION);
+                wave_generate.reset();
+                //wait_us(t * 7 / 10 / RESOLUTION);
+            }
         }
-        Wave = 0;
     }
 }
 
